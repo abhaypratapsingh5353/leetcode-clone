@@ -1,0 +1,230 @@
+
+:root{
+    --tw-bg-opacity: 1;
+}
+
+.flex{
+    display: flex;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #1A1A1A;
+    color: white;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+.is-dark{
+    background-color: rgb(40 40 40 / var(--tw-bg-opacity));
+}
+
+.nav-parent{
+    width: 100%;
+    border-bottom: 1px solid #464646;
+}
+
+
+
+#leetcode-navbar{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.contains-two{
+    width: 1200px;
+    max-width: 1200px;
+    height: 50px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.first-button-box{
+    height: 50px;
+    width: 889.4px;
+    display: flex;
+    justify-content: start;
+
+}
+
+
+.bell-icon-parent{
+    height: 32px;
+    width: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bell-icon{
+    height: 20px;
+    width: 20px;
+    color: #bdbec2;
+}
+
+.second-button-box{
+    height: 50px;
+    width: 256.775px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.logo-img-parent{
+    height: 22px;
+    width: 18.8182px;
+}
+
+.leetcode-logo-span-parent{
+    width: 54px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.leetcode-logo{
+    height: 22px;
+    width: 18.8182px;
+}
+
+
+.menu-items-centre{
+    gap: 25px;
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+
+.centre-button{
+    color: #bdbec2;
+    list-style-type: none;
+    width: auto;
+    align-content: center;
+    height: 22px;
+    font-family: "Raleway", sans-serif;
+}
+
+
+
+#store{
+    color: #ffa015;
+}
+
+
+.fire-icon-parent{
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 12px;
+}
+
+#daily-problem{
+    height: 20px;
+    width: 20px;
+    color: #fb8727;
+    display: flex;
+    gap: 5px;
+    font-size: 15px;
+    margin-top: 6px;
+}
+
+
+.nav-right-item {
+    margin: 2px;
+}
+
+
+.profile-pic-parent{
+    height: 24px;
+    width: 24px;
+}
+
+.profile-pic{
+    height: 24px;
+    width: 24px;
+    max-width: 100%;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+}
+
+
+#premium-btn {
+    color: #ffa015;
+    background-color: #53402a;
+    border-radius: 8px;
+    width: 85px;
+    height: 32px;
+    border: none;
+    font-family: sans-serif;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-container{
+    width: 1200px;
+    background-color: white;
+    height: 1000px;
+    margin-top: 65px;
+}
+
+.master-grid-container{
+    width: auto;
+    height: 100%;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 69.25% 29.25%;
+    gap: 1.5%;
+
+}
+.dis-conts{
+    display: contents;
+}
+
+
+.interview-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#ic{
+    width: 265px;
+}
+
+#ic > a > span > img{
+    border-radius: 4%;
+    height: 100%;
+}
+
+.sp-first{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.sp-first > :nth-child(1){
+    text-align: start;
+}
+
+.sp-first > :nth-child(2){
+    justify-self: self-end;
+}

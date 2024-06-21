@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>leetcode-LoneWolf5353</title>
+    <link rel="stylesheet" href="problem.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="nav-parent is-dark flex">
+        <nav id="leetcode-navbar" class="is-dark flex">
+            <div class="contains-two is-dark">
+                <a href="https://leetcode.com/" class="leetcode-logo-span-parent is-dark">
+                    <span class="logo-img-parent flex is-dark">
+                        <?xml version="1.0" encoding="UTF-8"?>
+                        <svg class="leetcode-logo is-dark" width="94px" height="111px" viewBox="0 0 94 111"
+                            version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+                            <title>1_black</title>
+                            <desc>Created with Sketch.</desc>
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="branding_-resource" transform="translate(-2093.000000, -290.000000)">
+                                    <g id="1_black" transform="translate(2093.000000, 290.000000)">
+                                        <path
+                                            d="M67.5068339,83.0664138 C70.0005384,80.5763786 74.0371402,80.5828822 76.5228362,83.0809398 C79.0085322,85.5789975 79.00204,89.6226456 76.5083355,92.1126808 L65.4351451,103.169577 C55.2192332,113.370744 38.5604663,113.518673 28.1722578,103.513204 C28.112217,103.455678 23.486583,98.9201326 8.22702585,83.9570195 C-1.92478479,74.0028895 -2.93614945,58.0748736 6.61697549,47.8463644 L24.4286944,28.7745461 C33.9100043,18.6218594 51.3874487,17.5122246 62.2279907,26.2789232 L78.4052912,39.3620235 C81.1448956,41.5776292 81.5728103,45.5984975 79.3610655,48.3428842 C77.1493207,51.0872709 73.1354592,51.5159327 70.3958548,49.300327 L54.2186634,36.2173149 C48.5492813,31.6325105 38.631911,32.2621597 33.7398535,37.5006265 L15.9279056,56.5726899 C11.2772073,61.552182 11.7865613,69.5740156 17.1461283,74.8292186 C28.3515339,85.8169393 36.9874071,94.2846214 36.9973988,94.294225 C42.3981571,99.4959838 51.130862,99.418438 56.43358,94.1233737 L67.5068339,83.0664138 Z"
+                                            id="path_3" fill="#FFA116" fill-rule="nonzero"></path>
+                                        <path
+                                            d="M40.6069914,72.0014117 C37.086019,72.0014117 34.2317068,69.142117 34.2317068,65.6149982 C34.2317068,62.0878794 37.086019,59.2285847 40.6069914,59.2285847 L87.6247154,59.2285847 C91.1456879,59.2285847 94,62.0878794 94,65.6149982 C94,69.142117 91.1456879,72.0014117 87.6247154,72.0014117 L40.6069914,72.0014117 Z"
+                                            id="path_2" fill="#B3B3B3"></path>
+                                        <path
+                                            d="M49.4124315,2.02335002 C51.8178981,-0.552320454 55.852269,-0.686893945 58.4234511,1.72277172 C60.9946333,4.13243738 61.1289722,8.17385083 58.7235056,10.7495213 L15.9282277,56.5728697 C11.2773659,61.551984 11.7867168,69.5737689 17.1459309,74.8291832 L36.9094236,94.2091099 C39.4255514,96.6764051 39.4686234,100.719828 37.0056277,103.240348 C34.5426319,105.760868 30.5062548,105.804016 27.990127,103.33672 L8.22654289,83.9567041 C-1.92467414,74.0021005 -2.93603527,58.0741402 6.61751533,47.846311 L49.4124315,2.02335002 Z"
+                                            id="path_1" fill="#FFFFFF"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </span>
+                </a>
+                <div class="first-button-box flex is-dark">
+                    <ul class="menu-items-centre flex is-dark">
+                        <li class="centre-button centre-button-explore is-dark">Explore</li>
+                        <li class="centre-button centre-button-problems is-dark">Problems</li>
+                        <li class="centre-button centre-button-contest is-dark">Contest</li>
+                        <li class="centre-button centre-button-discuss is-dark">Discuss</li>
+                        <li class="centre-button centre-button-interview is-dark" id="Interview">Interview
+                            <i class="fa-solid fa-angle-down is-dark" style="color: #bdbec2;"></i>
+                        </li>
+                        <li class="centre-button centre-button-store is-dark" id="store">Store
+                            <i class="fa-solid fa-angle-down is-dark" style="color: #ffa015;"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="second-button-box is-dark">
+                    <div class="bell-icon-parent is-dark">
+                        <svg class="bell-icon is-dark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20"
+                            height="20" fill="#bdbec2">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M6.20374 15.8174C6.18177 15.8563 6.15975 15.8945 6.13771 15.9322H17.8623C17.8403 15.8945 17.8182 15.8563 17.7963 15.8174C16.8756 14.1898 16.3333 12.0111 16.3333 9.21793C16.3333 6.93819 14.4012 5.07507 12 5.07507C9.5988 5.07507 7.66667 6.93819 7.66667 9.21793C7.66667 12.0111 7.12442 14.1898 6.20374 15.8174ZM20 17.9322H4.00001C3.00196 17.9322 2.61971 16.6307 3.45925 16.091C3.66114 15.9612 4.0464 15.5691 4.46294 14.8327C5.20893 13.5139 5.66667 11.6748 5.66667 9.21793C5.66667 5.81702 8.51018 3.07507 12 3.07507C15.4898 3.07507 18.3333 5.81702 18.3333 9.21793C18.3333 11.6748 18.7911 13.5139 19.5371 14.8327C19.9536 15.5691 20.3389 15.9612 20.5408 16.091C21.3803 16.6307 20.9981 17.9322 20 17.9322ZM12.9372 19.2783C13.2219 18.805 13.8363 18.6521 14.3096 18.9368C14.7828 19.2215 14.9357 19.836 14.651 20.3092C14.0976 21.2292 13.0875 21.7902 12 21.7902C10.9125 21.7902 9.90245 21.2292 9.34903 20.3092C9.06434 19.836 9.2172 19.2215 9.69045 18.9368C10.1637 18.6521 10.7781 18.805 11.0628 19.2783C11.2515 19.5919 11.6085 19.7902 12 19.7902C12.3915 19.7902 12.7485 19.5919 12.9372 19.2783Z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="fire-icon-parent is-dark">
+                        <i class="fire-icon fa-solid fa-fire is-dark" id="daily-problem"> 1</i>
+                    </div>
+                    <span class="profile-pic-parent is-dark">
+                        <img src="https://assets.leetcode.com/users/abhaypratapsingh5353/avatar_1713017968.png" alt=""
+                            class="profile-pic">
+                    </span>
+                    <button class="nav-right-item" id="premium-btn">Premium</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="main-container">
+        <div class="first-container">
+            <div class="master-grid-container">
+                <div class="left-container">
+                    <div class="interview-container">
+                        <div class="ic-first dis-conts" id="ic">
+                            <a id="ic" class="dis-conts" href="">
+                                <span class="dis-conts">
+                                    <img id="ic" src="https://assets.leetcode.com/users/images/49479bba-73b3-45d2-9272-99e773d784b2_1687290663.3168745.jpeg" alt="">
+                                </span>
+                            </a>
+                        </div>
+                        <div class="ic-second dis-conts" id="ic">
+                            <a id="ic" class="dis-conts" href="">
+                                <span class="dis-conts">
+                                    <img id="ic" src="https://assets.leetcode.com/users/images/770789b0-c96b-4663-86d1-baab25534864_1669795265.8012726.png" alt="">
+                                </span>
+                            </a>
+                        </div>
+                        <div class="ic-third dis-conts" id="ic">
+                            <a id="ic" class="dis-conts" href="">
+                                <span class="dis-conts">
+                                    <img id="ic" src="https://assets.leetcode.com/users/images/b0a08a5c-c575-48f6-9110-b6ae4e011e98_1655746322.579097.png" alt="">
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="study-plan">
+                        <div class="sp-first">
+                            <span>Study Plan</span>
+                            <span>
+                                <a href="">
+                                    See all
+                                </a>
+                            </span>
+                        </div>
+                        <div class="sp-second">
+    
+                        </div>
+                    </div>  
+                </div>
+                <div class="right-container">
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
